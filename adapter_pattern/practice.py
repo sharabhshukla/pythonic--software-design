@@ -44,10 +44,8 @@ if __name__ == '__main__':
     json_data = JSONData('JSON Data')
     # Convert different types of data into str format
 
-    adapter_objects = [ Adapter(pnd_data, output_data=pnd_data.get_pd_data),
-                        Adapter(xml_data, ouput_data=xml_data.get_xml_data)]
+    adapter_objects = [Adapter(xml_data, output_data=xml_data.get_xml_data), Adapter(pnd_data, output_data = pnd_data.get_pd_data), Adapter(json_data, output_data=json_data.get_json_data)]
 
-    for adapter_object in adapter_objects:
-        temporary_output = adapter_object.output_data()
-        print(temporary_output)
+    for obj in adapter_objects:
+        print("A {0} is a {1} vehicle".format(obj.name, obj.output_data()))
 

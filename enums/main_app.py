@@ -59,7 +59,7 @@ def main():
     card1 = Card(Suite.DIAMOND, Value.TWO)
     print(card1)
     deck1 = Deck()
-    print(deck1)
+    print(deck1.cards)
 
 if __name__ == '__main__':
     main()
