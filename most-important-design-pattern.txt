@@ -1,0 +1,5 @@
+1. Fascade pattern
+2. Bridge/adapter pattern
+3. strategy pattern
+4. observer pattern
+5. singleton pattern
